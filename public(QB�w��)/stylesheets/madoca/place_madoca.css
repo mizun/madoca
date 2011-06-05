@@ -6,9 +6,11 @@
  /* FireFoxで外部ドメインのttfを見に行く設定が設定うまくいかない……*/
 }
 body  {
-  background-color: rgba(5,5,5,1);
+  background-color: rgba(0,0,0,1);
+  background-image: url(../../images/madoca/bg.jpg);
   background-position: 50% -50px;
   background-repeat: no-repeat;
+  opacity:0.9;
 }
 p, span, div, button, select,legend {
   font-family: 'MadokaRunes';
@@ -18,63 +20,32 @@ p,span,legend {
   color: rgba(235,235,235,0.9);
   text-shadow: 1px 1px 4px rgba(215,215,215,0.6) , -1px -1px 4px rgba(215,215,215,0.6);
 }
-a {
-  color: rgba(235,235,235,0.99);
-  text-shadow: 1px 1px 4px rgba(215,215,215,0.9) , -1px -1px 4px rgba(215,215,215,0.9);
-}
-a:visited {
-  color: rgba(235,235,235,0.99);
-  text-shadow: 1px 1px 4px rgba(215,215,215,0.4) , -1px -1px 4px rgba(215,215,215,0.4);
-}
-a:hover {
-  color: rgba(235,235,235,0.99);
-  text-shadow: 1px 1px 4px rgba(255,255,255,0.9) , -1px -1px 4px rgba(255,255,255,0.9);
-}
 button {
   width: 60px;  
   text-align:center;
 }
 fieldset {
   border-color:rgba(0,0,0,0);
-  border: solid 2px rgba(181,181,181,0.6);
-  border-radius: 5px;
-  background-color: rgba(5,5,5,0.95);
-  -moz-box-shadow:
-  0px 0px 100px 10px rgba(181,181,181,0.1) inset,
-  0px 0px 15px 0px rgba(181,181,181,0.8) inset;
-  -webkit-box-shadow:
-  0px 0px 150px 10px rgba(181,181,181,0.1) inset,
-  0px 0px 15px 0px rgba(181,181,181,0.8) inset;
 }
 .place {
-  position:relative;
-  width: 245px;
+  width: 400px;
   height:300px;
-  margin:0px auto 0px auto;
-  left:18px;
+  margin: -100px auto 0px auto;
+  left: 10px;
   right:0px;
-  border: solid 0px rgba(255,255,255,0.1);
-  border-top-left-radius: 260px 420px;
-  border-top-right-radius: 260px 420px;
-  border-bottom-left-radius: 245px 250px;
-  border-bottom-right-radius: 245px 250px;
-  background: -moz-radial-gradient(50% 60%,
+  border: solid 2px rgba(255,255,255,0.4);
+  border-radius: 500px 500px 500px 500px / 400px 400px 400px 400px;
+  background: -moz-radial-gradient(center center,
               circle farthest-corner,
               rgba(255,255,255,0) 20%,
-              rgba(255,255,255,0.2) 90%,
-              rgba(255,255,255,0.5) 100%);
+              rgba(255,255,255,0.4) 90%,
+              rgba(255,255,255,0.7) 100%);
   background: -webkit-gradient(radial,
-              50% 58%, 1, 50% 58%, 185,
+              center center, 1, center center, 275,
               from(rgba(255,255,255,0)),
               color-stop(20%, rgba(255,255,255,0)),
-              color-stop(95%, rgba(255,255,255,0.3)),
-              to(rgba(255,255,255,0.5)));
-  -moz-box-shadow:
-  0px 0px 10px 0px rgba(181,181,181,0.7),
-  0px 0px 100px 0px rgba(181,181,181,0.35) inset;
-  -webkit-box-shadow:
-  0px 0px 15px 0px rgba(181,181,181,0.7),
-  0px 0px 120px 0px rgba(181,181,181,0.25) inset;
+              color-stop(95%, rgba(255,255,255,0.4)),
+              to(rgba(255,255,255,0.7)));
 }
 .place ul {
   text-align: center;
@@ -85,7 +56,7 @@ fieldset {
   margin-right: 30px;  
 }  
 .players {  
-  margin:40px auto 0px auto;
+  margin:100px auto 0px -10px;
   height:185px;
 }
 .players ul {
@@ -94,14 +65,12 @@ fieldset {
 .players ul li {  
   display: inline-block;
   list-style: none;
-  width: 185px;
+  width: 180px;
   height:30px;
   margin-right: 10px;  
   margin-bottom:12px;
 } 
 .player {
-  position:relative;
-  padding:1em; 
   height:125px;
   width: 150px;
   margin-top:20px;
@@ -113,21 +82,13 @@ fieldset {
               circle farthest-corner,
               rgba(95,166,196,0.6) 20%,
               rgba(95,166,196,0.2) 60%,
-              rgba(0,0,0,0.2) 100%);
+              rgba(255,255,255,0) 100%);
   background: -webkit-gradient(radial,
               50% 80%, 1, 50% 80%, 140,
               from(rgba(95,166,196,0.6)),
               color-stop(20%, rgba(95,166,196,0.6)),
               color-stop(60%, rgba(95,166,196,0.2)),
-              to(rgba(0,0,0,0.2)));
-  -moz-box-shadow:
-  0px 1px 4px rgba(0, 0, 0, 0.3),
-  0px 0px 40px rgba(0, 0, 0, 0.1) inset,
-  0px 0px 10px 0px rgba(95,166,196,0.7);
-  -webkit-box-shadow:
-  0px 1px 4px rgba(0, 0, 0, 0.3),
-  0px 0px 40px rgba(0, 0, 0, 0.1) inset,
-  0px 0px 15px 0px rgba(95,166,196,0.6);
+              to(rgba(255,255,255,0)));
 }
 .player_02{
   border: solid 2px rgba(198,54,63,0.2);
@@ -135,21 +96,13 @@ fieldset {
               circle farthest-corner,
               rgba(198,54,63,0.6) 20%,
               rgba(198,54,63,0.2) 60%,
-              rgba(0,0,0,0.2) 100%);
+              rgba(255,255,255,0) 100%);
   background: -webkit-gradient(radial,
               50% 80%, 1, 50% 80%, 140,
               from(rgba(198,54,63,0.6)),
               color-stop(20%, rgba(198,54,63,0.6)),
               color-stop(60%, rgba(198,54,63,0.2)),
-              to(rgba(0,0,0,0.2)));
-  -moz-box-shadow:
-  0px 1px 4px rgba(0, 0, 0, 0.3),
-  0px 0px 40px rgba(0, 0, 0, 0.1) inset,
-  0px 0px 10px 0px rgba(198,54,63,0.7);
-  -webkit-box-shadow:
-  0px 1px 4px rgba(0, 0, 0, 0.3),
-  0px 0px 40px rgba(0, 0, 0, 0.1) inset,
-  0px 0px 15px 0px rgba(198,54,63,0.6);
+              to(rgba(255,255,255,0)));
 }
 .player_03{
   border: solid 2px rgba(247,195,207,0.2);
@@ -157,21 +110,13 @@ fieldset {
               circle farthest-corner,
               rgba(247,195,207,0.6) 20%,
               rgba(247,195,207,0.2) 60%,
-              rgba(20,0,0,0.2) 100%);
+              rgba(255,255,255,0) 100%);
   background: -webkit-gradient(radial,
               50% 80%, 1, 50% 80%, 140,
               from(rgba(247,195,207,0.6)),
               color-stop(20%, rgba(247,195,207,0.6)),
               color-stop(60%, rgba(247,195,207,0.2)),
-              to(rgba(0,0,0,0.2)));
-  -moz-box-shadow:
-  0px 1px 4px rgba(0, 0, 0, 0.3),
-  0px 0px 40px rgba(0, 0, 0, 0.1) inset,
-  0px 0px 10px 0px rgba(247,195,207,0.7);
-  -webkit-box-shadow:
-  0px 1px 4px rgba(0, 0, 0, 0.3),
-  0px 0px 40px rgba(0, 0, 0, 0.1) inset,
-  0px 0px 15px 0px rgba(247,195,207,0.6);
+              to(rgba(255,255,255,0)));
 }
 .player_04  {
   border: solid 2px rgba(246,222,70,0.2);
@@ -179,43 +124,27 @@ fieldset {
               circle farthest-corner,
               rgba(246,222,70,0.6) 20%,
               rgba(246,222,70,0.2) 60%,
-              rgba(0,0,0,0.2) 100%);
+              rgba(255,255,255,0) 100%);
   background: -webkit-gradient(radial,
               50% 80%, 1, 50% 80%, 140,
               from(rgba(246,222,70,0.6)),
               color-stop(20%, rgba(246,222,70,0.6)),
               color-stop(60%, rgba(246,222,70,0.2)),
-              to(rgba(0,0,0,0.2)));
-  -moz-box-shadow:
-  0px 1px 4px rgba(0, 0, 0, 0.3),
-  0px 0px 40px rgba(0, 0, 0, 0.1) inset,
-  0px 0px 10px 0px rgba(246,222,70,0.7);
-  -webkit-box-shadow:
-  0px 1px 4px rgba(0, 0, 0, 0.3),
-  0px 0px 40px rgba(0, 0, 0, 0.1) inset,
-  0px 0px 15px 0px rgba(246,222,70,0.6);
+              to(rgba(255,255,255,0)));
 }
 .player_05  {
-  border: solid 2px rgba(95,55,117,0.2);
+  border: solid 2px rgba(95,55,117,0.3);
   background: -moz-radial-gradient(50% 80%,
               circle farthest-corner,
-              rgba(95,55,117,0.6) 20%,
+              rgba(95,55,117,0.8) 20%,
               rgba(95,55,117,0.2) 60%,
-              rgba(0,0,0,0.2) 100%);
+              rgba(255,255,255,0) 100%);
   background: -webkit-gradient(radial,
               50% 80%, 1, 50% 80%, 140,
-              from(rgba(95,55,117,0.6)),
-              color-stop(20%, rgba(95,55,117,0.6)),
+              from(rgba(95,55,117,0.8)),
+              color-stop(20%, rgba(95,55,117,0.8)),
               color-stop(60%, rgba(95,55,117,0.2)),
-              to(rgba(0,0,0,0.2)));
-  -moz-box-shadow:
-  0px 1px 4px rgba(0, 0, 0, 0.3),
-  0px 0px 40px rgba(0, 0, 0, 0.1) inset,
-  0px 0px 10px 0px rgba(95,55,117,0.7);
-  -webkit-box-shadow:
-  0px 1px 4px rgba(0, 0, 0, 0.3),
-  0px 0px 40px rgba(0, 0, 0, 0.1) inset,
-  0px 0px 15px 0px rgba(95,55,117,0.6);
+              to(rgba(255,255,255,0)));
 }
 .select_player {
   margin-top:0px;
