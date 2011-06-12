@@ -143,28 +143,29 @@
     </dl>
   </fieldset>
 </form>
-<p>
-  <button type="submit" id="start">start</button>
-  <button type="submit" id="reverse">reverse</button>
+<div class="d_buttons">
+  <p class ="p_buttons_1">
+    <button class ="b_start" type="submit" id="start">start</button>
+    <button class ="b_reverse" type="submit" id="reverse">reverse</button>
+  </p>
+  <p class ="p_buttons_2">
+    <button class ="b_next" type="submit" id="manual">next</button>
+  </p>
+  <p class ="p_select">
+    Interval:
+    <select class ="select_i" style="width:70px" id="interval">
+      <option>manual</option>
+      <option>0.5</option>
+      <option>3</option>
+      <option>5</option>
+      <option>10</option>
+    </select>
+  </p>
+</div>
+<p class ="p_link">
+  <a href="/places/1/edit">Edit</a> |
+  <a href="/places">Back</a>
 </p>
-<p>
-  <button type="submit" id="manual">next</button>
-</p>
-<p>
-  Interval:
-  <select style="width:70px" id="interval">
-    <option>manual</option>
-    <option>0.5</option>
-    <option>3</option>
-    <option>5</option>
-    <option>10</option>
-  </select>
-</p>
-<hr/>
-
-<a href="/places/1/edit">Edit</a> |
-<a href="/places">Back</a>
-
 
 
 </body>
