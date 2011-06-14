@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Daihinmin</title>
+<title>ñlÇ∆å_ñÒÇµÇƒëÂïxçãÇ…Ç»Ç¡ÇƒÇÊ</title>
 <link href="../stylesheets/madoca/scaffold_madoca.css" media="screen" rel="stylesheet" type="text/css" />
 <link href="../stylesheets/madoca/place_madoca.css" media="screen" rel="stylesheet" type="text/css" />
 <script src="../javascripts/jquery.min.js?1304207375" type="text/javascript"></script>
@@ -55,7 +55,7 @@
       </dt>
     </dl>
     <dl>
-      <div class='place drop-shadow'>
+      <div class='place'>
         <ul id='place_cards'>
         </ul>
       </div>
@@ -64,7 +64,7 @@
       <div class='players'>
         <ul id='players'>
             <li>
-              <div class="player player_01 drop-shadow lifted">
+              <div class="player player_01 lifted">
                 <div class='player_name'>
                   <span>
                     User1
@@ -79,7 +79,7 @@
               </div>
             </li>
             <li>
-              <div class="player player_02 drop-shadow lifted">
+              <div class="player player_02 lifted">
                 <div class='player_name'>
                   <span>
                     User2
@@ -94,7 +94,7 @@
               </div>
             </li>
             <li>
-              <div class="player player_03 drop-shadow lifted">
+              <div class="player player_03 lifted">
                 <div class='player_name'>
                   <span>
                     User3
@@ -109,7 +109,7 @@
               </div>
             </li>
             <li>
-              <div class="player player_04 drop-shadow lifted">
+              <div class="player player_04 lifted">
                 <div class='player_name'>
                   <span>
                     User4
@@ -124,7 +124,7 @@
               </div>
             </li>
             <li>
-              <div class="player player_05 drop-shadow lifted">
+              <div class="player player_05 lifted">
                 <div class='player_name'>
                   <span>
                     User5
@@ -143,28 +143,29 @@
     </dl>
   </fieldset>
 </form>
-<p>
-  <button type="submit" id="start">start</button>
-  <button type="submit" id="reverse">reverse</button>
+<div class="d_buttons">
+  <p class ="p_buttons_1">
+    <button class ="b_start" type="submit" id="start">start</button>
+    <button class ="b_reverse" type="submit" id="reverse">reverse</button>
+  </p>
+  <p class ="p_buttons_2">
+    <button class ="b_next" type="submit" id="manual">next</button>
+  </p>
+  <p class ="p_select">
+    Interval:
+    <select class ="select_i" style="width:70px" id="interval">
+      <option>manual</option>
+      <option>0.5</option>
+      <option>3</option>
+      <option>5</option>
+      <option>10</option>
+    </select>
+  </p>
+</div>
+<p class ="p_link">
+  <a href="/places/1/edit">Edit</a> |
+  <a href="/places">Back</a>
 </p>
-<p>
-  <button type="submit" id="manual">next</button>
-</p>
-<p>
-  Interval:
-  <select style="width:70px" id="interval">
-    <option>manual</option>
-    <option>0.5</option>
-    <option>3</option>
-    <option>5</option>
-    <option>10</option>
-  </select>
-</p>
-<hr/>
-
-<a href="/places/1/edit">Edit</a> |
-<a href="/places">Back</a>
-
 
 
 </body>
