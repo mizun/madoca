@@ -40,11 +40,11 @@ a:hover {
   color: rgba(223,189,209,0.9);
   text-shadow: 1px 1px 4px rgba(173,86,140,0.6) , -1px -1px 4px rgba(173,86,140,0.6);
   -moz-box-shadow:
-  0px 1px 4px rgba(0, 0, 0, 0.3),
+  0px 0px 4px rgba(0, 0, 0, 0.3),
   0px 0px 4px rgba(0, 0, 0, 0.1) inset,
   0px 0px 10px 0px rgba(161,82,138,0.7);
   -webkit-box-shadow:
-  0px 1px 4px rgba(0, 0, 0, 0.3),
+  0px 0px 4px rgba(0, 0, 0, 0.3),
   0px 0px 40px rgba(0, 0, 0, 0.1) inset,
   0px 0px 10px 0px rgba(161,82,138,0.7);
 }
@@ -297,15 +297,20 @@ fieldset {
 }
 .player_cards ul {
   text-align:left;
-  margin: 3px;  
+  margin: 6px auto 3px 10px;
   padding:0px;
 }
 .player_cards ul li {  
   width: 20px;
-  margin: 1px;  
+  margin: 1px;
 }  
 .player_cards ul li img {  
   width: 20px;
+  border-radius: 5px;
+  -moz-box-shadow:
+  0px 0px 10px 0px rgba(161,82,138,0.8);
+  -webkit-box-shadow:
+  0px 0px 10px 0px rgba(161,82,138,0.8);
 }  
 
 .drop-shadow {
@@ -360,36 +365,22 @@ fieldset {
     -o-transform:rotate(3deg);
     transform:rotate(3deg);
 }
-
+.place_cards{
+  position: relative;
+  top:100px;
+}
 .thumb {
   position: relative;
   display:inline-block;
-  background:#ccc;
-  -moz-box-shadow:0px 1px 5px rgba(0,0,0,0.2);
-  -webkit-box-shadow:0px 1px 5px rgba(0,0,0,0.2);
-  box-shadow:0px 1px 5px rgba(0,0,0,0.2);
   z-index:3;
 }
 .thumb img{
   position: relative;
   z-index:3;
   display:block;
-  border:3px solid #fff;
+  border:0px solid #fff;
   background: #ccc;
-}
-.thumb:after{
-  position:absolute;
-  top:0;
-  left:-2.5%;
-  z-index:2;
-  display:block;
-  content:"";
-  width:0%;
-  height:5%;
-  -moz-box-shadow:0px 102px 5px rgba(0,0,0,0.3);
-  -webkit-box-shadow:0px 102px 5px rgba(0,0,0,0.3);
-  box-shadow:0px 102px 5px rgba(0,0,0,0.3);
-  -moz-border-radius:50%;  
-  -webkit-border-radius:50%; 
+  -moz-box-shadow:0px 0px 20px 0px rgba(161,82,138,0.8);
+  -webkit-box-shadow:0px 0px 20px 0px rgba(161,82,138,0.8);
 }
 
