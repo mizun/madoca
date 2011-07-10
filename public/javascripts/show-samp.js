@@ -1,4 +1,5 @@
   function show_sample(){
+    generate_plate();
     set_player_cards();
     select_player();
     set_place_cards();
@@ -48,6 +49,11 @@
     $place_cards.append("<li class='thumb'><img src='../images/cards/6.png'/></li>");
     $place_cards.append("<li class='thumb'><img src='../images/cards/19.png'/></li>");
     $place_cards.append("<li class='thumb'><img src='../images/cards/53.png'/></li>");
+  }
+
+  function generate_plate () {
+    var $bg_plate = $("#bg_plate");    
+    $bg_plate.append("<div class='plate_01'/>");
   }
 
   function show_next () {
