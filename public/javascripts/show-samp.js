@@ -52,9 +52,21 @@
   }
 
   function generate_plate () {
-    var $bg_plate = $("#bg_plate");    
-    $bg_plate.append("<div class='plate_01'/>");
+    var $bg_plate = $("#bg_plate");
+    for(var i = 1; i <= 100; i++){
+      $bg_plate.append("<div id='plate_" + i + "'class='plate_base'/>");
+    }
+		// jqueryのidセレクタは、文字列べた書きしないと、addClassしたときにCSS3のプロパティを反映してくれない。
+		// $("#plate_" + i)とか書けない。変数でもダメ。どうしてくれよう・・・・・・
+    $("#plate_1").addClass("plate_01");
+    $("#plate_2").addClass("plate_02");
+    $("#plate_3").addClass("plate_03");
+    $("#plate_4").addClass("plate_04");
   }
+	
+	function arrange_plate () {
+		
+	}
 
   function show_next () {
     
