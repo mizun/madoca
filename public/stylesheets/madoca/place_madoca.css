@@ -398,85 +398,88 @@ fieldset {
 
 .plate_base{
   position:absolute;
+  top:auto;
+  left:auto;
+	margin auto;
   width: 120px;
   height:300px;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
 .plate_01{
-  top:460px;
-  left:350px;
   z-index:-1;
+  width: 100px;
+  height:300px;
   border: solid 0px rgba(34,61,54,1);
-  background: -moz-radial-gradient(50% 80%,
+  background: -moz-radial-gradient(50% 50%,
               circle farthest-corner,
               rgba(34,61,54,0.95) 20%,
               rgba(34,61,54,0.9) 60%,
               rgba(34,61,54,0.3) 100%);
   background: -webkit-gradient(radial,
-              80% 50%, 1, 70% 50%, 170,
+              50% 50%, 1, 50% 50%, 170,
               from(rgba(34,61,54,0.95)),
               color-stop(20%, rgba(34,61,54,0.95)),
-              color-stop(60%, rgba(34,61,54,0.9)),
+              color-stop(60%, rgba(34,61,54,0.5)),
               to(rgba(34,61,54,0.3)));
-  -moz-transform:    matrix(0.8, 0, 0, 1, 0, 0);
-  -webkit-transform: matrix(0.8, 0, 0, 1, 0, 0);
+  -moz-transform:    matrix(1, 0, 0, 1, 0, 0);
+  -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
 }
 .plate_02{
-  top:440px;
-  left:330px;
   z-index:-2;
+  width: 90px;
+  height:270px;
   border: solid 0px rgba(24,41,35,1);
-  background: -moz-radial-gradient(50% 80%,
+  background: -moz-radial-gradient(50% 50%,
               circle farthest-corner,
               rgba(24,41,35,0.9) 20%,
               rgba(24,41,35,0.85) 60%,
               rgba(24,41,35,0.25) 100%);
   background: -webkit-gradient(radial,
-              80% 50%, 1, 70% 50%, 170,
+              50% 50%, 1, 50% 50%, 170,
               from(rgba(24,41,35,0.9)),
               color-stop(20%, rgba(24,41,35,0.9)),
-              color-stop(60%, rgba(24,41,35,0.85)),
+              color-stop(60%, rgba(24,41,35,0.5)),
               to(rgba(24,41,35,0.25)));
-  -moz-transform:    matrix(0.8, 0, 0, 1, 0, 0);
-  -webkit-transform: matrix(0.8, 0, 0, 1, 0, 0);
+  -moz-transform:    matrix(1, 0, 0, 1, 0, 0);
+  -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
 }
 .plate_03{
-  top:420px;
-  left:310px;
   z-index:-3;
+  width: 80px;
+  height:240px;
   border: solid 0px rgba(14,31,21,1);
-  background: -moz-radial-gradient(50% 80%,
+  background: -moz-radial-gradient(50% 50%,
               circle farthest-corner,
               rgba(14,31,21,0.85) 20%,
               rgba(14,31,21,0.8) 60%,
               rgba(14,31,21,0.2) 100%);
   background: -webkit-gradient(radial,
-              80% 50%, 1, 70% 50%, 170,
+              50% 50%, 1, 50% 50%, 170,
               from(rgba(14,31,21,0.85)),
               color-stop(20%, rgba(14,31,21,0.85)),
-              color-stop(60%, rgba(14,31,21,0.8)),
+              color-stop(60%, rgba(14,31,21,0.5)),
               to(rgba(14,31,21,0.2)));
-  -moz-transform:    matrix(0.8, 0, 0, 1, 0, 0);
-  -webkit-transform: matrix(0.8, 0, 0, 1, 0, 0);
+  -moz-transform:    matrix(1, 0, 0, 1, 0, 0);
+  -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
 .plate_04{
-  top:400px;
-  left:290px;
   z-index:-4;
+  width: 70px;
+  height:210px;
   border: solid 0px rgba(6,21,11,1);
-  background: -moz-radial-gradient(50% 80%,
+  background: -moz-radial-gradient(50% 50%,
               circle farthest-corner,
               rgba(6,21,11,0.85) 20%,
               rgba(6,21,11,0.8) 60%,
               rgba(6,21,11,0.2) 100%);
   background: -webkit-gradient(radial,
-              80% 50%, 1, 70% 50%, 170,
+              50% 50%, 1, 50% 50%, 170,
               from(rgba(6,21,11,0.85)),
               color-stop(20%, rgba(6,21,11,0.85)),
-              color-stop(60%, rgba(6,21,11,0.8)),
+              color-stop(60%, rgba(6,21,11,0.5)),
               to(rgba(6,21,11,0.2)));
-  -moz-transform:    matrix(0.8, 0, 0, 1, 0, 0);
-  -webkit-transform: matrix(0.8, 0, 0, 1, 0, 0);
+  -moz-transform:    matrix(1, 0, 0, 1, 0, 0);
+  -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
 }
