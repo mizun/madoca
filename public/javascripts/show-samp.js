@@ -1,6 +1,6 @@
   function show_sample(){
 //    generate_plate();
-//		arrange_plate();
+		arrange_plate();
     set_player_cards();
     select_player();
     set_place_cards();
