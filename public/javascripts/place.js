@@ -23,7 +23,7 @@ if(typeof(dd.place) == 'undefined') { dd.place = {}; }
     cache: false
   });
 
-  /**
+  /*
    * @class ShowOption
    */
   dd.place.ShowOption = function() {};
@@ -36,7 +36,7 @@ if(typeof(dd.place) == 'undefined') { dd.place = {}; }
     players_card_url : null
   };
 
-  /**
+  /*
    * @class Show
    */
   dd.place.Show = (function() {
@@ -165,7 +165,31 @@ if(typeof(dd.place) == 'undefined') { dd.place = {}; }
       }
     };
 
-    /**
+    var to_english_exec = function() {
+      $("p").addClass("font_normal");
+      $("span").addClass("font_normal");
+      $("div").addClass("font_normal");
+      $("select").addClass("font_normal");
+      $("legend").addClass("font_normal");
+      $("button").addClass("font_normal");
+      $(".b_font").removeClass("font_normal");
+      $(".b_font").html("to Madoca");
+      $("#change_font").click(to_runic_exec);
+    };
+    
+    var to_runic_exec = function() {
+      $("p").removeClass("font_normal");
+      $("span").removeClass("font_normal");
+      $("div").removeClass("font_normal");
+      $("select").removeClass("font_normal");
+      $("legend").removeClass("font_normal");
+      $("button").removeClass("font_normal");
+      $(".b_font").addClass("font_normal");
+      $(".b_font").html("to English");
+      $("#change_font").click(to_english_exec);
+    };
+
+    /*
      * Constractor
      */
     Constr = function() {
@@ -268,7 +292,12 @@ if(typeof(dd.place) == 'undefined') { dd.place = {}; }
       reverse : function() {
         reverse_flg = !reverse_flg;
         set_players_card();
+      },
+      
+      font_change : function() {
+        to_english_exec();
       }
+      
     };
 
     return Constr;

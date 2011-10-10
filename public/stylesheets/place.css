@@ -1,15 +1,16 @@
 @font-face {
   font-family: 'MadokaRunes';
-  src: url('../font/MadokaRunes/MadokaRunes.eot'); /* IE */
-  src: url('../font/MadokaRunes/MadokaRunes.ttf') format('truetype');
+  src: url('../../font/MadokaRunes/MadokaRunes.eot'); /* IE */
+  src: url('../../font/MadokaRunes/MadokaRunes.ttf') format('truetype');
+  src: url('http://tmpspace.net/MadokaRunes.ttf') format('truetype');
  /* FireFoxで外部ドメインのttfを見に行く設定が設定うまくいかない……*/
 }
 body  {
-  background-color: rgba(5,5,5,0.95);
+  background-color: rgba(11,11,11,0.93);
   background-position: 50% -50px;
   background-repeat: no-repeat;
 }
-p, span, div, button, select,legend {
+p, span, div, select ,legend, button {
   font-family: 'MadokaRunes';
 }
 p,span,legend {
@@ -29,7 +30,10 @@ a:hover {
   color: rgba(235,235,235,0.99);
   text-shadow: 1px 1px 4px rgba(255,255,255,0.9) , -1px -1px 4px rgba(255,255,255,0.9);
 }
-.b_start, .b_reverse, .b_next, .select_i, .p_select {
+.font_normal {
+  font-family: 'Georgia';
+}
+.b_start, .b_reverse, .b_next, .select_i, .p_select{
   width: 80px;
   text-align:center;
   background-color: rgba(93,59,120,0.3);
@@ -46,6 +50,8 @@ a:hover {
   0px 0px 4px rgba(0, 0, 0, 0.3),
   0px 0px 40px rgba(0, 0, 0, 0.1) inset,
   0px 0px 10px 0px rgba(161,82,138,0.7);
+}
+.b_font {
 }
 .d_buttons{
   width: 400px;
@@ -78,7 +84,6 @@ a:hover {
   border-color:rgba(90,37,88,0.9);
   color: rgba(223,189,209,0.9);
   text-shadow: 1px 1px 4px rgba(173,86,140,0.6) , -1px -1px 4px rgba(173,86,140,0.6);
-  font-family: 'MadokaRunes';
 }
 .op_select{
   background-color: rgba(93,59,120,0.9);
@@ -90,16 +95,17 @@ a:hover {
 fieldset {
   z-index:0;
   border-color:rgba(0,0,0,0);
-  border-top: solid 2px rgba(181,181,181,0.6);
-  border-bottom: solid 2px rgba(181,181,181,0.6);
+  border: solid 2px rgba(181,181,181,0.6);
   border-radius: 5px;
   background-color: rgba(5,5,5,0.8);
   -moz-box-shadow:
   0px 0px 100px 10px rgba(181,181,181,0.1) inset,
   0px 0px 15px 0px rgba(181,181,181,0.8) inset;
   -webkit-box-shadow:
-  0px 0px 150px 10px rgba(181,181,181,0.1) inset,
+  0px 0px 300px 100px rgba(222,222,222,0.02) inset,
+  0px 0px 150px 20px rgba(181,181,181,0.05) inset,
   0px 0px 15px 0px rgba(181,181,181,0.8) inset;
+  text-shadow: 1px 1px 4px rgba(215,215,215,0.9) , -1px -1px 4px rgba(215,215,215,0.9);
 }
 .place {
   position:relative;
