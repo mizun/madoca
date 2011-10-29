@@ -166,25 +166,49 @@ if(typeof(dd.place) == 'undefined') { dd.place = {}; }
     };
 
     var to_english_exec = function() {
+      $("p").removeClass("madoca");
+      $("a").removeClass("madoca");
+      $("span").removeClass("madoca");
+      $("div").removeClass("madoca");
+      $("select").removeClass("madoca");
+      $("legend").removeClass("madoca");
+      $("button").removeClass("madoca");
+      
       $("p").addClass("font_normal");
+      $("a").addClass("font_normal");
       $("span").addClass("font_normal");
       $("div").addClass("font_normal");
       $("select").addClass("font_normal");
       $("legend").addClass("font_normal");
       $("button").addClass("font_normal");
+      
       $(".b_font").removeClass("font_normal");
+      $(".b_font").addClass("madoca");
+      
       $(".b_font").html("to Madoca");
       $("#change_font").click(to_runic_exec);
     };
     
     var to_runic_exec = function() {
       $("p").removeClass("font_normal");
+      $("a").removeClass("font_normal");
       $("span").removeClass("font_normal");
       $("div").removeClass("font_normal");
       $("select").removeClass("font_normal");
       $("legend").removeClass("font_normal");
       $("button").removeClass("font_normal");
+      
+      $("p").addClass("madoca");
+      $("a").addClass("madoca");
+      $("span").addClass("madoca");
+      $("div").addClass("madoca");
+      $("select").addClass("madoca");
+      $("legend").addClass("madoca");
+      $("button").addClass("madoca");
+      
+      $(".b_font").removeClass("madoca");
       $(".b_font").addClass("font_normal");
+      
       $(".b_font").html("to English");
       $("#change_font").click(to_english_exec);
     };

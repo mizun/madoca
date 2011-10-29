@@ -9,8 +9,10 @@ body  {
   background-color: rgba(11,11,11,0.93);
   background-position: 50% -50px;
   background-repeat: no-repeat;
+  color: rgba(235,235,235,0.9);
+  text-shadow: 1px 1px 4px rgba(215,215,215,0.6) , -1px -1px 4px rgba(215,215,215,0.6);
 }
-p, span, div, select ,legend, button {
+p.madoca, span.madoca, div.madoca, legend.madoca, button.madoca, select.madoca, a.madoca{
   font-family: 'MadokaRunes';
 }
 p,span,legend {
@@ -32,6 +34,8 @@ a:hover {
 }
 .font_normal {
   font-family: 'Georgia';
+  color: rgba(235,235,235,0.9);
+  text-shadow: 1px 1px 4px rgba(215,215,215,0.6) , -1px -1px 4px rgba(215,215,215,0.6);
 }
 .b_start, .b_reverse, .b_next, .select_i, .p_select{
   width: 80px;
@@ -52,6 +56,7 @@ a:hover {
   0px 0px 10px 0px rgba(161,82,138,0.7);
 }
 .b_font {
+  color: rgba(5,5,5,0.95);
 }
 .d_buttons{
   width: 400px;
