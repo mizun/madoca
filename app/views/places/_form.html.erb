@@ -1,0 +1,40 @@
+<%= form_for @place  do |f| %>
+  <% if @place.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@place.errors.count, "error") %> prohibited this place from being saved:</h2>
+      <ul>
+      <% @place.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <fieldset>
+    <legend>Place</legend>
+    <dl>
+      <dt>
+        <label for="title">Title:</label>
+      </dt>
+      <dd><%= f.text_field :title %></dd>
+    </dl>
+    <dl>
+      <dt>
+        <label for="game_count">Game count:</label>
+      </dt>
+      <dd><%= f.text_field :game_count %></dd>
+    </dl>
+    <dl>
+      <dt><label>Players:</label></dt>
+      <dd>
+        <ul id="players">
+          <% f.fields_for :players do |player| %>
+            <%= render 'player_fields', :f => player %>
+          <% end %>
+        </ul>
+      </dd>
+    </dl>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+  </fieldset>
+<% end %>

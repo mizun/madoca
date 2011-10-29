@@ -1,0 +1,10 @@
+<% if authenticated? %>
+  Logined.
+<% else %>
+  Not Logined.
+<% end %>
+<p>
+Msg:<%= flash[:notice] %>
+</p>
+
+<%= link_to 'Back', login_path %>

@@ -1,0 +1,5 @@
+/root/daihinmin/app/views/places/show.html.erb
+/root/daihinmin/public/stylesheets/place.css
+/root/daihinmin/public/stylesheets/scaffold.css
+/root/daihinmin/public/javascripts/place.js
+/root/daihinmin/public/images/cards/*
